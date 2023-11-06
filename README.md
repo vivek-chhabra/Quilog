@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Quilog - our Journey, Your Words, Your Story.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Quilog is a blogging website that allows users to create and access blogs from different users. Users can like and comment on blogs, but to perform these actions, they must be logged in.**
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+> [Live Demo](https://quilog-red.vercel.app/)
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Screenshot (262)](https://github.com/vivek-chhabra/Quilog/assets/105328667/2da6194a-1bff-481f-95b8-c089f374e7f6)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🏠 Home Page: Displays a feed of blogs from various users.
+- ✍️ Create Blog: Logged-in users can create their own blogs.
+- ❤️ Like Blogs: Users can like blogs to show appreciation.
+- 💬 Comment on Blogs: Users can leave comments on blogs to interact with other users.
+- 👤 User Authentication: Users need to be logged in to create, like, or comment on blogs.
 
-### `npm run build`
+<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- ⚛️ React: A JavaScript library for building user interfaces.
+- 🎨 SCSS: Cascading Style Sheets for enhancing the visual appeal.
+- ✏️ JSX: A syntax extension for JavaScript, used in React for component structure.
+- 🚀 JavaScript: Programming language used for logic implementation.
+- 🔐 Firebase Authentication: Firebase authentication service for user management and authentication.
+- 🔥 Firestore Database: Cloud-hosted NoSQL database provided by Firebase.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br>
 
-### `npm run eject`
+## Setup and Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository from GitHub.
+2. Navigate to the project directory.
+3. Install the dependencies by running the command: `npm install`.
+4. Configure Firebase credentials for authentication and database access.
+5. Start the development server by running the command: `npm start`.
+6. Access the application in your web browser at `http://localhost:3000`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. After starting the development server and accessing the application, you will be directed to the home page, where all the blogs are displayed.
+2. If you are not logged in, you will be prompted to log in or create an account.
+3. Logged-in users can create their own blogs by clicking on the "Create Blog" option.
+4. You can like blogs by clicking the heart icon and leave comments by clicking the comment icon.
 
-## Learn More
+<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For any inquiries or assistance, please feel free to contact us at [Vivek Chhabra](vivekcb8642@gmail.com) 📧
