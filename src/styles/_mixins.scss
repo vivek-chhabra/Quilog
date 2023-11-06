@@ -1,0 +1,14 @@
+@mixin avatar($width, $height, $color) {
+    .img {
+        width: $width * 1rem;
+        height: $height * 1rem;
+        border-radius: 50%;
+        border: 2px solid $color;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+}

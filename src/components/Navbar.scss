@@ -1,0 +1,33 @@
+@import '../styles/breakpoints';
+@import '../styles/mixins';
+
+.Navbar {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-block: 1.5rem;
+
+    .container {
+        justify-content: space-between;
+        align-items: center;
+        
+        .logo {
+            gap: 1rem;
+            font-size: 2.3rem;
+            font-weight: 600;
+            align-items: center;
+
+            i {
+                font-size: 3rem;
+            }
+        }
+
+        .right {
+            align-items: center;
+            gap: 2.3rem;
+            font-size: 1.6rem;
+
+            @include avatar(4.5, 4.5, rgb(187, 187, 187))
+        }
+    }
+}

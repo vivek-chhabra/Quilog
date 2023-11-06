@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Arsenal:wght@400;700&family=Croissant+One&family=Inclusive+Sans&family=Inconsolata:wght@200;500;700;800;900&family=Josefin+Sans:wght@300;400;500;600;700&family=Marcellus&family=Mooli&family=Open+Sans:wght@300&family=Poppins:wght@100;300;400;500;600&family=Roboto:wght@400;500;700;900&family=Work+Sans:wght@300;500;600;700&display=swap");
+@import "./styles/breakpoints";
+
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("./assets/background.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-inline: 4rem;
+    font-family: "ABeeZee", sans-serif;
+    font-family: "Arsenal", sans-serif;
+    font-family: "Croissant One", serif;
+    font-family: "Inclusive Sans", sans-serif;
+    font-family: "Inconsolata", monospace;
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Marcellus", serif;
+    font-family: "Mooli", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+    /* font-family: "Roboto", sans-serif;
+    font-family: "Work Sans", sans-serif; */
+
+    @include sm {
+        padding-inline: 2.5rem;
+    }
+
+    @include xs {
+        padding-inline: 2rem;
+    }
+}
+
+html {
+    font-size: 62.5%;
+
+    @include xl {
+        font-size: 61%;
+    }
+
+    @include lg {
+        font-size: 59%;
+    }
+
+    @include sm {
+        font-size: 55%;
+    }
+
+    @include xs {
+        font-size: 50%;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 135rem;
+    width: 100%;
+    margin-inline: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    margin-bottom: 0;
+}
