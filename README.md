@@ -1,4 +1,4 @@
-# Quilog - our Journey, Your Words, Your Story.
+# Quilog - Your Journey, Your Words, Your Story.
 
 **Quilog is a blogging website that allows users to create and access blogs from different users. Users can like and comment on blogs, but to perform these actions, they must be logged in.**
 
