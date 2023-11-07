@@ -9,14 +9,18 @@ import { message } from "../../utils/message";
 import useToggle from "../../hooks/useToggle";
 import { auth, db } from "../../firebase/config";
 import "./Feed.scss";
+import { categories } from "../../utils/categories";
+import Select from "react-select";
 
 export default function Feed() {
+    const [selectedCate, setSelectedCate] = useState("");
     const [showCmt, toggleShowCmt] = useToggle(false);
     const [comment, setComment] = useState("");
     const [cmtErr, setCmtErr] = useState(null);
+    const [document, setDocument] = useState([]);
 
     const { user } = useContext(AuthContext);
-    const { error, document } = useCollection("blogs");
+    const { error, document: blogs } = useCollection("blogs");
     const { error: userErr, document: userDoc } = useCollection("users");
     const { response, editDocument, deleteDocument } = useFirestore();
     const { error: updateErr, isPending, success } = response;
@@ -88,10 +92,22 @@ export default function Feed() {
     };
 
     useEffect(() => {
-        if(updateErr || userErr || error || cmtErr) {
-            window.scrollTo(0, 0)
+        if (updateErr || userErr || error || cmtErr) {
+            window.scrollTo(0, 0);
         }
-    }, [updateErr, userErr, error, cmtErr])
+    }, [updateErr, userErr, error, cmtErr]);
+
+    useEffect(() => {
+        if (blogs) {
+            if (selectedCate) {
+                if (selectedCate.value === "all") setDocument(blogs);
+                else {
+                    const filteredDoc = blogs.filter((doc) => doc?.category?.some((doc) => doc?.value === selectedCate?.value));
+                    setDocument(filteredDoc);
+                }
+            } else setDocument(blogs);
+        }
+    }, [blogs, selectedCate]);
 
     return (
         <>
@@ -102,6 +118,8 @@ export default function Feed() {
 
             <div className="Feed">
                 <div className="container flex-col">
+                    <Select className="select" styles={{ control: (p, state) => ({ ...p, border: "none", outline: "hidden", borderRadius: ".8rem", cursor: "pointer" }) }} options={categories} onChange={(options) => setSelectedCate(options)} required placeholder={"Sort by Category"} />
+                    {document.length === 0 && <h1>NO POST FOUND!</h1>}
                     {document
                         ?.slice()
                         .reverse()

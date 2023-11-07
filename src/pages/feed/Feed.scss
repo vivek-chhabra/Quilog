@@ -8,6 +8,16 @@
         align-items: center;
         gap: 4rem;
 
+        .select {
+            width: 100%;
+            box-shadow: 3px 3px 4px rgb(222, 222, 222), -3px -3px 4px rgb(222, 222, 222), 3px -3px 4px rgb(222, 222, 222), -3px 3px 4px rgb(222, 222, 222);
+            border: 2px solid rgb(205, 205, 205);
+            border-radius: .8rem;
+            max-width: 75rem;
+            width: 100%;
+            font-size: 1.4rem;
+        }
+
         .blog {
             padding: 3rem 3.5rem;
             gap: 1rem;

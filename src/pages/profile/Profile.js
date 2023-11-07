@@ -43,7 +43,7 @@ export default function Profile() {
         }
 
         let res = await uploadFile(`files/profile/${user?.uid}/${selected[0].name}`, selected[0]);
-        // await editDocument('blogs',)
+        // await editDocument('blogs',va)
         setIsUpdated(true);
     };
 
