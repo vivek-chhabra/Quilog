@@ -19,6 +19,7 @@
 - ❤️ Like Blogs: Users can like blogs to show appreciation.
 - 💬 Comment on Blogs: Users can leave comments on blogs to interact with other users.
 - 👤 User Authentication: Users need to be logged in to create, like, or comment on blogs.
+- 🔍 Sorting Functionality: Easily sort and find blogs by various categories.
 
 <br>
 
